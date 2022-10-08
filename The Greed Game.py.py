@@ -1,3 +1,6 @@
+# Greed is played according to the following rules.
+from shutil import move
+from turtle import right
 from unicodedata import name
 from xml.dom.minidom import ProcessingInstruction
 
@@ -35,9 +38,18 @@ class Player(Person):
             Gems.random.int(1, 79)
             Rock.ramdon.int(1, 20)
         #) can move left or right along the bottom of the screen.
+    def side_move(self):
+        self.player = move
+        move = ""
+        left_side = (-0) # move to
+        right_side = (0) # move to
+        
+    def score(self):
+        self.touches = touches  
+        
         player_touches = sum # they earn
         
-        if Rock < Gems:
+        if touches < Gems:
             print("you gained much point {sum}")
             print("You Win")
         else: # game over
@@ -49,7 +61,7 @@ class Player(Person):
             player_touches.roll()
             self.score += touches.points 
         self.total_score += self.touches
-
+    
 #Your program must also meet the following requirements.
 
 #The program must have a README file.
@@ -69,9 +81,3 @@ class Player(Person):
 #Enhanced player movement (up and down in a limited range)
 #Enhanced game play and game over messages.
 #Enhanced gem, rock and player representation (colors or better symbols)
-
-        
-        
-        
-        
-        
